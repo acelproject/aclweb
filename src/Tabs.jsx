@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { useDispatch } from "react-redux";
+import { setTabs } from "./redux/slices/tabsSlices";
 
 // menu tabs
 const tabs = [
@@ -18,13 +20,15 @@ const tabs = [
 
 export default function Tabs({ setActive, active }) {
   console.log(active);
+  const dispatch = useDispatch();
+  
   return (
     <>
       {tabs.map((tab) => (
         <div
           key={tab.id}
           className="w-1/3 text-center py-3 relative cursor-pointer"
-          onClick={() => setActive(tab.id)}
+          onClick={() => dispatch(setTabs(tab.id))}
         >
           <div
             className={`h-1 w-[100%] bottom-0 left-0 absolute flex justify-center transition`}
