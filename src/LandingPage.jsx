@@ -4,7 +4,7 @@ import bg1 from "./assets/bg1.jpg";
 export default function LandingPage() {
   return (
     <div className="w-full h-[100vh] hero mx-auto flex justify-center items-center bg-black relative overflow-hidden">
-      <div className="absolute md:w-1/2 w-[500px]">
+      <div className="absolute md:w-1/2 w-[600px]">
         <img src={bg1} alt="" className="" />
       </div>
       <div>
