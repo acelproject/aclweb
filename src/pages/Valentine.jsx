@@ -7,7 +7,7 @@ export default function Valentine() {
   const [state, setState] = useState(16);
   const [yes, setYes] = useState(false);
   return (
-    <div className="h-[100vh] bg-pink-50 justify-center flex items-center">
+    <div className="h-[100vh] bg-amber-100 justify-center flex items-center">
       <div className="hidden">
         <audio src={sound} autoPlay loop controls></audio>
       </div>
@@ -19,7 +19,7 @@ export default function Valentine() {
             <img src={img2} alt="" className="w-28" />
           )}
         </div>
-        <div className="font-bold text-pink-600">
+        <div className="font-bold text-amber-600">
           {yes ? "yeyyy, Lets go babyyyy!! " : "Will you be my Valentine? "}
         </div>
         <div className={`${yes ? "hidden" : ""}`}>

@@ -14,7 +14,7 @@ export default function LandingPage() {
         <div>
           <Link to={`/tabs`}>Tabs</Link>
         </div> */}
-        <div className="relative z-40 -top-20 bg-pink-600 rounded-md text-white px-5 py-2 text-2xl">
+        <div className="relative z-40 -top-20 bg-amber-700 rounded-md text-white px-5 py-2 text-2xl">
           <Link to={`/valentine`}>Klik Dulu!</Link>
         </div>
       </div>
