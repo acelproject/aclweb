@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero::after {
+  @apply absolute w-full h-full bg-gradient-to-r from-black/70 to-pink-500/60  top-0 left-0;
+  content: "";
+}
